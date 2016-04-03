@@ -1,4 +1,5 @@
 #include "Graph.h"
+#include <iostream>
 #include <conio.h>
 
 int main()
@@ -7,7 +8,9 @@ int main()
 
     myGraph.inputVertices();
     myGraph.inputEdges();
-    //myGraph.BFS();
+    cout << "BFS" << endl;
+    myGraph.BFS();
+    cout << endl << "DFS" << endl;
     myGraph.DFS(myGraph.getGraphNodes() + myGraph.getSourceVertexID());
     _getch();
     return 0;
